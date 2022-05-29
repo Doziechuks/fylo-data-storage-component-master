@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 23em;
+}
+
+.mobile-background {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 60em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 0 1.5em;
+    position: relative;
+}
+
+.box-1 {
+    width: 100%;
+    max-width: 20em;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5em;
+    border-radius: 0.5em 5em 0.5em 0.5em;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    max-width: 8em;
+}
+
+.box-1-icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+.icons {
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    max-width: 3em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+.box-2 {
+    width: 100%;
+    max-width: 30em;
+    background-color: hsl(228, 56%, 26%);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+
+.data-box {
+    width: 100%;
+    max-width: 10em;
+    color: black;
+    background-color: #fff;
+    padding: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    transform: translateY(-70%);
+}
+
+
+.data-box p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.angle {
+    border: 1px solid;
+    border-width: 20px 30px 20px 0px;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    transform: translateY(-15%);
+}
+
+.box-2-wrap {
+    margin-top: 0.5em;
+
+}
+
+.used-data {
+    width: 100%;
+    max-width: 30em;
+    margin-bottom: 1em;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.data-load {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.data-longest {
+    width: 100%;
+    padding: 0.1em 0;
+    border-radius: 2em;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.data-longer {
+    width: 80%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 0.4em 0;
+    border-radius: 2em;
+    position: relative;
+}
+
+.data-circle {
+    padding: 0.3em;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 0.5%;
+    transform: translateY(-50%);
+}
+
+.data-range {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .background {
+        display: none;
+    }
+
+    .mobile-background {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        max-width: 22em;
+    }
+
+    .box-1,
+    .box-2 {
+        width: 100%;
+        max-width: 100em;
+        display: none;
+    }
+
+    .logo {
+        max-width: 10em;
+    }
+
+    .icons {
+        max-width: 3em;
+    }
+
+    .angle {
+        display: none;
+    }
+
+
+
+    .box-2-wrap {
+        margin-top: 0;
+        margin-bottom: 2em;
+
+    }
+
+    .used-data {
+        font-size: 0.9em;
+        padding: 0 0.5em;
+    }
+
+    .data-box {
+        max-width: 8.5rem;
+        left: 0;
+        top: 75%;
+        transform: translateX(60%);
+    }
+
+    .data-box h2 {
+        font-size: 2rem;
+    }
+
+    .data-range {
+        font-size: 0.8rem;
+    }
+
+}
