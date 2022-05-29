@@ -238,6 +238,10 @@ body {
         font-size: 2rem;
     }
 
+    .data-longest {
+        padding: 0.1em 0;
+    }
+
     .data-range {
         font-size: 0.8rem;
     }
