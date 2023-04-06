@@ -36,7 +36,7 @@ ___
 `<p>hello paragragh element</p>`
 
 <!-- image -->
-![chuka](images/logo.svg)
+![chuka](images/bg-mobile.png)
 
 <!-- Github Markdown -->
 
